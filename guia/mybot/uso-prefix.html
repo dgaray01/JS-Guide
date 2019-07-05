@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href=../../assets/img/logo/icon-portal.png type="image/x-icon">
+		<meta name="description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord.;">
+		<!-- og -->
+		<meta name="twitter:card" value="summary" />
+<meta name="twitter:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta name="twitter:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta name="twitter:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+<meta name="theme-color" content="#2C2F33" />
+<meta property="og:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta property="og:site_name" content="Portal MyBOT"/>
+<meta property="og:url" content="https://portalmybot.com/" />
+<meta property="og:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+		<!-- titulo -->
+		<title>Uso de prefix | Guía MyBOT</title>
+		<!-- assets -->
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-icons.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-exp.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+        <script async src="../../pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9868772348664456",
+            enable_page_level_ads: true
+          });
+        </script>
+</head>
+<body id="bgindex">
+	<header class="navbar bg-c-navbar p-fixed">
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="navbar-brand">
+					<img src="../../assets/img/logo/portal-logo.png" class="logo" alt="...">
+			</a>
+		</section>
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="btn btn-link portal-link">PORTAL</a>
+			<a href="../../mybotlist.html" target="_blank" class="btn btn-link portal-link">MYBOT LIST</a>
+			<a href="../../comunidad/videos.html" target="_blank" class="btn btn-link portal-link">VIDEOS</a>
+						<a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=418980969903554580&redirect_uri=https://portalmybot.com/login.php&scope=identify&state=UCm5QaRsnwkAL9j7" class="btn btn-empty">LOGIN</a>
+					</section>
+	</header>
+<!-- body -->
+<div class="container-guia">
+	<div class="columns">
+		<div class="column col-3 col-xs-12">
+			<div class="content-menu">
+				<!-- start nav -->
+				<ul class="nav" id="items-list">
+					<li class="nav-item ">
+						<span class="nav-title">Inicio</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Información</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Introducción</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/faq.html">FAQ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Instalación y configuración App</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/instalacion-configuracion.html">Editor de codigo</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/cuenta-discord.html">Cuenta discord app</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/discordjs-nodejs.html">../../guia/mybot/discord.js y Node.js</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Desarrollo y activación Bot</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/desarrollo-activacion-bot.html">En marcha mi primer bot</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-prefix.html">Uso de un prefix</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-embed.html">Uso de mensajes embed</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de argumentos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de eventos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de colecciones</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de roles</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Ejemplos basicos</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Introducción a un bot de musica</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Introducción e instalación</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Conexion a un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Desconexion de un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Transmitiendo en un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Varible dispatcher</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Otros metodos de transmision</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- end nav -->
+			</div>
+		</div>
+		<!-- CONTENT -->
+		<div class="column col-9 col-xs-12">	
+			<div class="content-body">	
+					<!-- divider -->
+				<ul class="pagination view-mb">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/desarrollo-activacion-bot.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">En marcha mi primer BOT</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../guia/mybot/uso-embed.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">Uso de mensajes embeds</div>
+						</a>
+					</li>
+				</ul>
+				<div class="divider view-mb"></div>
+				<!-- /divider -->
+				<div class="content">
+					<h1 id="inicio">Uso de un prefix (simbolo indentificador) <a href="#inicio"><i class="icon icon-link"></i></a></h1>
+					<p>Usted puede ser que haya visto en muchos bots que responden a los comandos con un prefix unico y específicio. Ya se un signo de exclamación <mark>!</mark>, un signo de <mark>+</mark>, un signo de interrogación <mark>?</mark> u otros carácteres. Esto es muy útil para:</p>
+					<p>En primer lugar, si no utiliza un prefix único y tiene más de un BOT en un servidor, ambos responderán a los mismos comandos.</p>
+					<p>En segundo lugar, en el ejemplo basico su BOT responden cuando el mensaje comienza con <mark>ping</mark> que son 4 caracteres, esto significa que la siguiente frase provocará la respuesta del BOT.</p>
+					<p>Para evitar todo estos casos se usa un prefix unico, vamos a crear un prefix, así como la capacidad de cambiar el prefix cuando guste desde un solo lugar.</p>
+					<script async src="../../pagead/js/adsbygoogle.js"></script>
+					<!-- Bloque portalmybot -->
+					<ins class="adsbygoogle"
+										style="display:block"
+										data-ad-client="ca-pub-9868772348664456"
+										data-ad-slot="5989368364"
+										data-ad-format="auto"
+										data-full-width-responsive="true"></ins>
+					<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<p><strong>Bien, hay dos formas de poder crear y usar una variable como prefix:</strong></p>
+					<ul>
+						<li> 1. Creando una varible dentro del mismo archivo de su bot como prefix.</li>
+						<li> 2. Dividir en partes la configuración de variables, creando un archivo <mark>json</mark></li>
+					</ul>
+					<p>Vamos por la forma mas recomendada, <strong> en crear un archivo <mark>.json</mark> para nuestra configuración de variables.</strong></p>
+					<br>
+					<h2 id="archivo-json" >Creando un archivo json para nuestra variables <a href="#archivo-json"><i class="icon icon-link"></i></a></h2>
+					<p>Crear un nuevo archivo dentro de la carpeta del bot y darle el nombre de <mark>config.json</mark> <strong>(.json es la extención del archivo)</strong>.</p>
+					<figure>
+						<img src="../../assets/img/configjsongif.gif" class="img-responsive" alt="config.json para las variables">
+					</figure>
+					<p>JSON, son notaciones de objetos para javascript, mas información en <a href="https://www.json.org/json-es.html" target="_blank" rel="noopener noreferrer">json.org</a></p>
+					<br>
+					<p>Ahora que ya hemos creado el archivo de configuración hay 2 cosas de inicio que podemos agregar al archivo, son:</p>
+						<ul>
+							<li>El token de su BOT</li>
+							<li>El prefix de su BOT</li>
+						</ul>
+					<p>Asi como otros datos que considere de prioridad unica durante el desarrollo.</p>
+					<p>Agregar las siguientes lineas de configuración dentro del archivo <mark>json</mark> creado.</p>
+<pre class='code code-javascript'><label>JS</label><code>{
+ "token":"tokenSecreto",
+ "prefix":"-"
+}
+</code></pre>
+					<br>
+					<p>Despues de agregar usted puede cambiar el objeto <mark>prefix</mark> con el simbolo para el prefix de su BOT, para el ejemplo usare el simbolo <mark>-</mark> como prefix. Tambien copie el <mark>token</mark> de su BOT en el objeto token del archivo de configuración.</p>
+					<p>Guarde la configuración usando <mark>CONTROL +S </mark></p>
+					<h2 id="referenciando-archivo-json">Referenciando el archivo de configuración json <a href="#referenciando-archivo-json"><i class="icon icon-link"></i></a></h2>
+					<p>Nos dirigimos a la parte superior del archivo de su BOT (mybot.js), agregamos una nueva línea de codigo para referenciar al archivo <mark>config.json</mark> mediante una variable.</p>
+<pre class='code code-javascript'><label>JS</label><code>const config = require("../../guia/mybot/config.js");
+</code></pre>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Descripción del codigo agregado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><mark>const</mark> crea una variable con el nombre <mark>config</mark> para referenciar al archivo de configuración <mark>config.json</mark> creado anteriormente.</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<p>Ahora usted utilizara la variable <mark>config</mark> para llamar a los objetos que estan dentro del archivo de configuración <mark>config.json</mark>.</p>
+					<ul>
+						<li>Para llamar o utilizar el objeto prefix escribimos: <mark>config.prefix</mark></li>
+						<li>Para llamar o utilizar el objeto token escribimos: <mark>config.token</mark></li>
+					</ul>
+					<br>
+					<h2 id="uso-variable-config">Usando la variable de configuración 'config' <a href="#uso-variable-config"><i class="icon icon-link"></i></a></h2>
+					<p>Vamos a usar la variable <mark>config</mark> que representa el archivo de configuración, primero cambiamos el token llamando al objeto token mediante la variable config.
+						<p>La linea de nuestro bot se ve así:</p>
+					</p>
+<pre class='code code-javascript'><label>JS</label><code>client.login("MzASfasFWf_asdASDKKW-SFASfasFWf#f3KKsds51.sDSd");
+</code></pre>
+					<p>Usando <mark>config</mark> y el objeto token seria así:</p>
+<pre class='code code-javascript'><label>JS</label><code>client.login(config.token);</code></pre>
+					<p>Listo, la otra linea que tenemos que agregar es el objeto <mark>prefix</mark>, vamos a la linea de nuestro codigo debajo de config y agregamos el prefix creando una nueva variable para los comandos, de esta forma</p>
+<pre class='code code-javascript'><label>JS</label><code>let prefix = config.prefix;
+</code></pre>
+				<br>
+				<p><strong>Despues de agregar y referenciar nuestro archivo de configuración <mark>config.json</mark> a nuestro BOT, esto se deberia de ver así:</strong></p>
+<pre class='code code-javascript'><label>JS</label><code>const Discord = require("../../guia/mybot/discord.js");
+const client = new Discord.Client();
+const config = require("../../guia/mybot/config.js");
+let prefix = config.prefix;
+client.on("ready", () => {
+   console.log("Estoy listo!");
+});
+client.on("message", (message) => {
+  if(message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  }
+});
+client.login(config.token);			
+</code></pre>
+					<br>
+					<p>Ahora agregamos un nuevo comando de ejemplo basico para probar con el nuevo prefix</p>
+					<blockquote> 
+						<strong>NOTA:</strong> Los nuevos comandos que agregemos deben estar dentro del evento <mark>message</mark> y siempre debe de abrir y cerrar las llaves <mark>'{ }'</mark>, es importate para que pueda interactuar con los mensajes de un servidor a travez de condiciones y funciones agregadas.
+					</blockquote>
+					<br>
+					<p><strong> Ejemplo: 1</strong> Creamos una nueva condicion <strong>if()</strong> debajo de nuestro primer comando ping</p>
+<pre class='code code-javascript'><label>JS</label><code>if(message.content.startsWith(prefix + "hola")) { 
+     message.channel.send("Hola que tal?");
+}</code></pre>
+					<br>
+					<p><strong>Despues de agregar, la estructura de su BOT se deberia de ver así:</strong></p>
+<pre class='code code-javascript'><label>JS</label><code>const Discord = require("../../guia/mybot/discord.js");
+const client = new Discord.Client();
+const config = require("../../guia/mybot/config.js");
+let prefix = config.prefix;
+client.on("ready", () => {
+   console.log("Estoy listo!");
+});
+client.on("message", (message) => {
+  if(message.content.startsWith(prefix + "ping")) {
+    message.channel.send("pong!");
+  } else
+  if(message.content.startsWith(prefix + "hola")) { 
+     message.channel.send("Hola que tal?");
+  }
+});
+client.login(config.token);
+</code></pre>
+					<p>Luego de agregar, guardar todo usando <mark>(CONTROL + S)</mark>.</p>
+					<p>Como hemos visto agregamos el nuevo comandos dentro del evento message con una condicion if donde se describe de esta manera: <strong>Si el contenido del mensaje enviado en el servidor empieza con el prefix mas hola (-hola), devuelveme: hola que tal?.</strong> </p>
+					<p>Vamos a activar nuevamente su BOT y comprobar los cambios con el nuevo prefix agregado. Pero antes, para desactivar o apagar un BOT en consola es presionando <mark>CONTROL + C</mark></p>
+					<p>Prueba:</p>
+					<figure>
+						<img src="../../assets/img/usandoprefixgif.gif" class="img-responsive" alt="uso de un prefix">
+					</figure>
+					<p><strong>!Genial¡</strong> , su BOT ahora responde a los comandos atravez del prefix creado.</p>
+					<br>
+					<h2 id="prevencion-bucle">Prevención del bucle infinito <a href="#prevencion-bucle"><i class="icon icon-link"></i></a></h2>
+					<p>Hay una última cosa de la que quiero hablar: <strong>¿los bots se contestan?</strong>, ¡si! y esto se debe a que si usted tiene 2 bots con el mismo prefix en su servidor y cada uno debe responder a la orden del mismo prefix, ejemplo -help. Ahora si una persona escribe -help en un canal y ambos bots responden, y uno de los bots verá la respuesta como una consulta y se contestarán a cada momento. A eso se le denomina como un bucle infinito: <strong>"repetir lo mismo sin detenerse."</strong> </p>
+					<p>Para evitar que esto ocurra, debemos agregar dos condiciónes dentro del evento <mark>message</mark>, al inicio (arriba de tu primer comando):</p>
+<pre class='code code-javascript'><label>JS</label><code>if (!message.content.startsWith(prefix)) return; 
+if (message.author.bot) return;
+</code></pre>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Descripción del codigo agregado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>La primera condicion nos dice que si el contenido del mensaje no empieza con nuestro <mark>prefix</mark>, retorne nada o detenga las funciones.</td>
+							</tr>
+							<tr>
+								<td>La segunda condicion nos dice que si el contenido del mensaje fue enviado por un BOT, retorne nada. <strong>Esto es importante para evitar los bucles infinitos.</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<p>Entonces, luego de agregar nuestro archivo de configuración y las condiciones de prevención tenemos un BOT que sólo responde a 2 comandos con nuestro prefix, <strong>¿Es esto un bot básico completado? ¡Por supuesto!.</strong></p>
+				</div>
+				<!-- divider -->
+				<div class="divider"></div>
+				<ul class="pagination">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/desarrollo-activacion-bot.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">En marcha mi primer BOT</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../guia/mybot/uso-embed.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">Uso de mensajes embeds</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /body -->
+	<script src="../../assets/js/jquery-3.0.0.min.js"></script>
+	<script src="../../assets/js/main.js"></script>
+</body>
+</html>

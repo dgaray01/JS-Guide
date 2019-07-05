@@ -1,0 +1,32 @@
+html, body {
+	background-color: #2C2F33;
+	color: #FFFFFF;
+	font-family: 'Rajdhani',
+	sans-serif;
+}
+.bg-nav {
+	background-color: #23272A;
+}
+.container{
+	margin-top: 30px;
+}
+.row{
+	margin-top: 30px;
+}
+.card {
+	background-color: #23272A;
+	border: 2px solid rgba(0, 0, 0, .1);
+	border-radius: 2px;
+	box-sizing: border-box;
+}
+
+.btn-discord {
+	background-color: #7289DA;
+	color: #FFFFFF;
+}
+.modal {
+	color: #2C2F33;
+}
+.nav-item {
+	font-size: 18px;
+}

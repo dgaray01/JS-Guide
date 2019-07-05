@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href=../../assets/img/logo/icon-portal.png type="image/x-icon">
+		<meta name="description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord.;">
+		<!-- og -->
+		<meta name="twitter:card" value="summary" />
+<meta name="twitter:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta name="twitter:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta name="twitter:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+<meta name="theme-color" content="#2C2F33" />
+<meta property="og:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta property="og:site_name" content="Portal MyBOT"/>
+<meta property="og:url" content="https://portalmybot.com/" />
+<meta property="og:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+		<!-- titulo -->
+		<title>Uso de embed | Guía MyBOT</title>
+		<!-- assets -->
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-icons.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-exp.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+        <script async src="../../pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9868772348664456",
+            enable_page_level_ads: true
+          });
+        </script>
+</head>
+<body id="bgindex">
+	<header class="navbar bg-c-navbar p-fixed">
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="navbar-brand">
+					<img src="../../assets/img/logo/portal-logo.png" class="logo" alt="...">
+			</a>
+		</section>
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="btn btn-link portal-link">PORTAL</a>
+			<a href="../../mybotlist.html" target="_blank" class="btn btn-link portal-link">MYBOT LIST</a>
+			<a href="../../comunidad/videos.html" target="_blank" class="btn btn-link portal-link">VIDEOS</a>
+						<a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=418980969903554580&redirect_uri=https://portalmybot.com/login.php&scope=identify&state=UCm5QaRsnwkAL9j7" class="btn btn-empty">LOGIN</a>
+					</section>
+	</header>
+<!-- body -->
+<div class="container-guia">
+	<div class="columns">
+		<div class="column col-3 col-xs-12">
+			<div class="content-menu">
+				<!-- start nav -->
+				<ul class="nav" id="items-list">
+					<li class="nav-item ">
+						<span class="nav-title">Inicio</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Información</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Introducción</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/faq.html">FAQ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Instalación y configuración App</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/instalacion-configuracion.html">Editor de codigo</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/cuenta-discord.html">Cuenta discord app</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/discordjs-nodejs.html">Discord.js y Node.js</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Desarrollo y activación Bot</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/desarrollo-activacion-bot.html">En marcha mi primer bot</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-prefix.html">Uso de un prefix</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-embed.html">Uso de mensajes embed</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de argumentos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de eventos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de colecciones</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de roles</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Ejemplos basicos</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Introducción a un bot de musica</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Introducción e instalación</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Conexion a un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Desconexion de un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Transmitiendo en un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Varible dispatcher</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Otros metodos de transmision</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- end nav -->
+			</div>
+		</div>
+		<!-- CONTENT -->
+		<div class="column col-9 col-xs-12">	
+			<div class="content-body">	
+					<!-- divider -->
+				<ul class="pagination view-mb">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/uso-prefix.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">Uso de un prefix</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../index.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">Uso de argumentos</div>
+						</a>
+					</li>
+				</ul>
+				<div class="divider view-mb"></div>
+				<!-- /divider -->
+				<div class="content">
+					<h1 id="inicio">Uso de mensajes embed <a href="#inicio"><i class="icon icon-link"></i></a></h1>
+					<p>Un embed es un tipo de mensaje con una interfaz fluida con muchas propiedades para la creación de un mensaje. Teniendo encuenta que no tendrán la misma apariencia en los moviles.</p>
+					<p>Algunas reglas de embeds que tienes que saber:</p>
+					<ul>
+						<li>Al menos un campo de estar presente.</li>
+						<li>Cada campo es opcional.</li>
+						<li>Ningún campo puede estar vacío, nulo o no definido</li>
+					</ul>
+					<p>Son reglas necesarias para una buena inserción de un mensaje de tipo embed.</p>
+					<script async src="../../pagead/js/adsbygoogle.js"></script>
+					<!-- Bloque portalmybot -->
+					<ins class="adsbygoogle"
+										style="display:block"
+										data-ad-client="ca-pub-9868772348664456"
+										data-ad-slot="5989368364"
+										data-ad-format="auto"
+										data-full-width-responsive="true"></ins>
+					<script>
+										(adsbygoogle = window.adsbygoogle || []).push({});
+					</script>
+					<p>Hay 2 maneras de crear un mensaje de tipo embed. <strong>La primera, es mediante el constructor RichEmbed, veamos.</strong></p><br>
+					<h2 id="richembed">Usando el constructor Rich embed <a href="#richembed"><i class="icon icon-link"></i></a></h2>
+					<p>El constructor RichEmbed, se podria decir que la manera mas simple para crear un mensaje de tipo embed.</p>
+					<p>Se aplican las mismas reglas mencionadas. De hecho, el constructor es sólo un acceso directo para obtener el mismo objeto.</p>
+					<p><strong>Ejemplo: 2</strong></p>
+<pre class='code code-javascript'><label>JS</label><code>const embed = new Discord.RichEmbed() 
+    .setTitle("Este es su título, puede contener 256 caracteres")
+    .setAuthor(message.author.username, message.author.displayAvatarURL)
+    .setColor(0x00AE86)
+    .setDescription("Este es el cuerpo principal del texto, puede contener 2048 caracteres.")
+    .setFooter("Pie de página, puede contener 1024 caracteres", client.user.avatarURL)
+    .setImage(message.author.displayAvatarURL)
+    .setThumbnail(message.author.displayAvatarURL)
+    .setTimestamp()
+    .setURL("https://github.com/CraterMaik")
+    .addField("Este es un título de campo", "Este es un valor de campo puede contener 1024 caracteres.")
+    .addField("Campo en línea", "Debajo del campo en línea",  true)
+    .addBlankField(true)
+    .addField("Campo en línea 3", "Puede tener un máximo de 25 campos.", true);
+message.channel.send({embed});
+</code></pre>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Descripción del codigo agregado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Creamos una variable llamada embed, sera nuestro constructor Embed que tendra los campos agregados.</td>
+							</tr>
+							<tr>
+								<td>Cada campo agregado tiene una pequeña descripción de uso, son opcionales y al menos debe de tener un campo o funcion agregado.</td>
+							</tr>
+							<tr>
+								<td>Usamos la variable embed que contiene los campos agregados y lo envimos a un canal como un objeto.</td>
+							</tr>
+							<tr>
+								<td>La función setTimestamp() toma un objeto Date, por defecto la fecha actual del sistema que se muestra en el pie de página del embed y addBlankField() generan campos en blanco, util para crear espacios entre campos.</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<p><strong>Resultado:</strong></p>
+					<figure>
+						<img src="../../assets/img/msgrichembed.png" alt="resultado msg richembed">
+					</figure>
+					<br>
+					<h2 id="objetos-embed">Usando objetos por campo para embed <a href="#objetos-embed"><i class="icon icon-link"></i></a></h2>
+					<p>Los campos dentro de los embeds son realmente agradables cada campo puede tener un título y un valor, y los campos también se pueden apilar por columnas.</p>
+					<p><strong>Ejemplo 3: usando objetos basico.</strong></p>
+<pre class='code code-javascript'><label>JS</label><code>message.channel.send({embed: {
+      color: 3447003,
+      description: "Esto es un simple mensaje embed."
+    }
+});
+</code></pre>
+					<p>Es muy importante que cada llave "{ }" ó parentecis "( )" abierta debe de de cerrarce al final.</p>
+						<table class="table">
+						<thead>
+							<tr>
+								<th>Descripción del codigo agregado</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Dentro del un comando nuevo, utilizamos la funcion send() del evento message y creamos un objeto embed, similar a la estructura de un archivo .json. y utilizamos el objeto color que determina el color de la barra a la izquierda de un embed, y el objeto description el contenido principal del mensaje.</td>
+							</tr>
+						</tbody>
+					</table>
+					<br>
+					<p><strong>Resultado:</strong></p>
+					<figure>
+						<img src="../../assets/img/msgembed.png" class="img-responsive" alt="resultado msg objetos embed">
+					</figure>
+					<br>
+					<p><strong>Ejemplo 4: usando objetos más complejo.</strong></p>
+					<p>Un ejemplo más complejo de un embed que tiene muchos campos diferentes, así como iconos y un pie de página:</p>
+<pre class='code code-javascript'><label>JS</label><code>message.channel.send({embed: {
+      color: 3447003,
+      author: {
+          name: client.user.username,
+          icon_url: client.user.avatarURL
+      },
+      title: "Enlace Embed",
+      url: "https://github.com/CraterMaik",
+      description: "Mesaje de prueba para la descripcion del embed.",
+      fields: [{
+          name: "Campo1",
+          value: "Pueden tener diferentes campos con pequeñas descripciones."
+        },
+        {
+          name: "Campo2",
+          value: "Puedes poner [Enlaces web](https://github.com/CraterMaik) dentro del embed."
+        },
+        {
+          name: "Campo3",
+          value: "Puedes poner todos los Markdown *cursiva* **__Marcado__** dentro de un embed."
+        }
+      ],
+      timestamp: new Date(),
+      footer: {
+        icon_url: client.user.avatarURL,
+        text: github.com/CraterMaik"
+      }
+    }
+});
+</code></pre>
+					<br>
+					<p><strong>Resultado:</strong></p>
+					<figure>
+						<img src="../../assets/img/msgembed2.png" class="img-responsive" alt="resultado msg objetos embed complejo">
+					</figure>
+				</div>
+				<!-- divider -->
+				<div class="divider"></div>
+				<ul class="pagination">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/uso-prefix.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">Uso de un prefix</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../index.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">Uso de argumentos</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /body -->
+	<script src="../../assets/js/jquery-3.0.0.min.js"></script>
+	<script src="../../assets/js/main.js"></script>
+</body>
+</html>

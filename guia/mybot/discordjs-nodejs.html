@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="icon" href=../../assets/img/logo/icon-portal.png type="image/x-icon">
+		<meta name="description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord.;">
+		<!-- og -->
+		<meta name="twitter:card" value="summary" />
+<meta name="twitter:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta name="twitter:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta name="twitter:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+<meta name="theme-color" content="#2C2F33" />
+<meta property="og:title" content="Portal MyBOT - Guias y Herramientas" />
+<meta property="og:site_name" content="Portal MyBOT"/>
+<meta property="og:url" content="https://portalmybot.com/" />
+<meta property="og:description" content="Portal MyBOT Es una plataforma con diferentes guías y herramientas en español, orientadas al desarrollo de apps/bots y contenido para comunidades de discord." />
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://portalmybot.com/assets/img/logo/portal-web.png" />
+		<!-- titulo -->
+		<title>Discord js y Node js | Guía MyBOT</title>
+		<!-- assets -->
+		<link href="https://fonts.googleapis.com/css?family=Rajdhani:600" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-icons.min.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/spectre-exp.css" />
+		<link rel="stylesheet" type="text/css" href="../../assets/css/style.css" />
+        <script async src="../../pagead/js/adsbygoogle.js"></script>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-9868772348664456",
+            enable_page_level_ads: true
+          });
+        </script>
+</head>
+<body id="bgindex">
+	<header class="navbar bg-c-navbar p-fixed">
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="navbar-brand">
+					<img src="../../assets/img/logo/portal-logo.png" class="logo" alt="...">
+			</a>
+		</section>
+		<section class="navbar-section px-5">
+			<a href="../../index.html" class="btn btn-link portal-link">PORTAL</a>
+			<a href="../../mybotlist.html" target="_blank" class="btn btn-link portal-link">MYBOT LIST</a>
+			<a href="../../comunidad/videos.html" target="_blank" class="btn btn-link portal-link">VIDEOS</a>
+						<a href="https://discordapp.com/oauth2/authorize?response_type=code&client_id=418980969903554580&redirect_uri=https://portalmybot.com/login.php&scope=identify&state=UCm5QaRsnwkAL9j7" class="btn btn-empty">LOGIN</a>
+					</section>
+	</header>
+<!-- body -->
+<div class="container-guia">
+	<div class="columns">
+		<div class="column col-3 col-xs-12">
+			<div class="content-menu">
+				<!-- start nav -->
+				<ul class="nav" id="items-list">
+					<li class="nav-item ">
+						<span class="nav-title">Inicio</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Información</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Introducción</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/faq.html">FAQ</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Instalación y configuración App</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/instalacion-configuracion.html">Editor de codigo</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/cuenta-discord.html">Cuenta discord app</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/discordjs-nodejs.html">Discord.js y Node.js</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Desarrollo y activación Bot</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../guia/mybot/desarrollo-activacion-bot.html">En marcha mi primer bot</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-prefix.html">Uso de un prefix</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../guia/mybot/uso-embed.html">Uso de mensajes embed</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de argumentos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de eventos</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de colecciones</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Uso de roles</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Ejemplos basicos</a>
+							</li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<span class="nav-title">Introducción a un bot de musica</span>
+						<ul class="nav">
+							<li class="nav-item">
+								<a href="../../index.html">Introducción e instalación</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Conexion a un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Desconexion de un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Transmitiendo en un canal voz</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Varible dispatcher</a>
+							</li>
+							<li class="nav-item">
+								<a href="../../index.html">Otros metodos de transmision</a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+				<!-- end nav -->
+			</div>
+		</div>
+		<!-- CONTENT -->
+		<div class="column col-9 col-xs-12">	
+			<div class="content-body">	
+					<!-- divider -->
+				<ul class="pagination view-mb">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/cuenta-discord.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">Cuenta discord</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../guia/mybot/desarrollo-activacion-bot.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">En marcha mi primer BOT</div>
+						</a>
+					</li>
+				</ul>
+				<div class="divider view-mb"></div>
+				<!-- /divider -->
+				<div class="content">
+					<h1 id="inicio">Instalación de Discordjs y Node.js <a href="#inicio"><i class="icon icon-link"></i></a></h1>
+					<p>Para usar discord.js y empezar a programar necesitará un par de cosas instaladas. Por lo menos:</p>
+					<ul>
+						<li>Minimo: node.js version 8 o superior</li>
+						<li>Tener un editor de codigo real. Si no tienen instalado un editor de codigo ir a la <a href="../../guia/mybot/instalacion-configuracion.html" target="_blank" rel="noopener noreferrer">Instalación editor de codigo</a></li>
+					</ul>
+					<script async src="../../pagead/js/adsbygoogle.js"></script>
+<!-- Bloque portalmybot -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9868772348664456"
+     data-ad-slot="5989368364"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+					<br>
+					<h2 id="nodejs-instalacion">Instalación de Nodejs <a href="#nodejs-instalacion"><i class="icon icon-link"></i></a></h2>
+					<p>Node es un entorno de ejecución para JavaScript, usa un modelo de operaciones E/S sin bloqueo y orientado a eventos, que lo hace liviano y eficiente.</p>
+					<p>Para instalar Node, vamos a la siguiente pagina web <a href="https://nodejs.org/es/" target="_blank" rel="noopener noreferrer"> Nodejs.org</a></p>
+					<figure>
+						<img src="../../assets/img/node.png" class="img-responsive" alt="">
+					</figure>
+					<p>Descargar la versión recomendada e instalar en su PC. (Reinicié su PC si es necesario)</p>
+					<h2 id="nodejs-entorno">Preparando el entorno de programación para su BOT <a href="#nodejs-entorno"><i class="icon icon-link"></i></a></h2>
+					<p>Una vez que tenga el software requerido, el siguiente paso es preparar un espacio para empezar a programar.</p>
+					<ul>
+						<li>Crear una carpeta en el escritorio o en una unidad de disco duro o partición.</li>
+						<li>Darle un nombre a la carpeta (Ejm. BOT, BotDiscord, MyBOT, etc.).</li>
+						<li>Una vez que haya creado una carpeta, abrir la consola (interfaz de línea de comandos) con al ruta de la carpeta.</li>
+					</ul>
+					<figure>
+						<img src="../../assets/img/consola.png" class="img-responsive" alt="">
+					</figure>
+					<p>Si no pudo abrir la consola con la ruta, sigue estos pasos: (en Windows)</p>
+					<ul>
+						<li>Presionar la tecla de windows(⊞ Win) + R y escribir "cmd", luego clic en Aceptar para abrir la consola.</li>
+						<figure>
+							<img src="../../assets/img/ejecutarCMD.png" class="img-responsive" alt="">
+						</figure>
+						<li>Una vez dentro de la consola escribir lo siguiente: cd desktop\MyBOT (MyBOT es el nombre de la carpeta creada).</li>
+					</ul>
+					<p>Listo, ahora vayamos al siguiente paso.</p>
+					<blockquote>
+						<p>Si tiene problemas con estos pasos, puede mirar el video en youtube y seguir los siguientes <a href="https://youtu.be/VfTxiAMB9b8?t=232" target="_blank">Pasos Nodejs entorno</a>, luego vuelve.</p>
+					</blockquote>
+					<br>
+					<h2 id="nodejs-instalacion">Instalación de Discordjs <a href="#discordjs-instalacion"><i class="icon icon-link"></i></a></h2>
+					<p>Una vez dentro de la consola con la ruta de la carpeta, vamos a instalar Discord.js.</p>
+					<p>Pero primero vamos a inicializar esta carpeta con node y npm (NPM = Node Package Manager - Administrador de paquetes/librerias para node), esto asegurará que cualquier otro módulo instalado se instale dentro de la carpeta creada.</p>
+					<p>Para iniciar escribimos dentro de la consola, <mark> npm init -y </mark>, luego pulse enter dentro de la consola.</p>
+					<figure>
+						<img src="../../assets/img/initgif.gif" class="img-responsive" alt="">
+					</figure>
+					<p>Se creara un nuevo archivo llamado package.json significa que has iniciado correctamente. Si desea saber mas información sobre package.json haga <a href="https://docs.npmjs.com/files/package.json" target="_blank" rel="noopener noreferrer">clic aquí</a>.</p>
+					<br>
+					<p>Ahora instalamos Discord.js a través de npm:</p>
+					<p>Escribir <mark> npm install discord.js --save</mark>  en la consola y pulse enter.</p>
+					<figure>
+						<img src="../../assets/img/discordjsgif.gif" class="img-responsive" alt="">
+					</figure>
+					<blockquote>
+						<strong>NOTA: </strong> <mark>--save</mark> o <mark>--s</mark> es para asegurar que se guarde en el package.json que creamos anteriormente.
+					</blockquote>
+					<p>La instalación es muy rapida y mostrara el proceso de la instalacion en la pantalla de la consola.</p>
+					<p>Una vez completada la instalación de Discordjs, nos fijamos en la carpeta y se dará cuenta de que hay una nueva carpeta creada llamada node_modules. Esto contiene todos los paquetes instalados para el funcionamiento de Discordjs.</p>
+					<p><strong>Significa que Discord.js se a instalado correctamente. ¡Bien hecho!, ahora vayamos a poner en marcha su primer bot.</strong></p>
+					<blockquote>
+						<p>Si tiene problemas con estos pasos, puede mirar el video en youtube y seguir los siguientes <a href="https://youtu.be/VfTxiAMB9b8?t=282" target="_blank">Pasos Discordjs instalación</a>, luego vuelve.</p>
+					</blockquote>
+				</div>
+				<!-- divider -->
+				<div class="divider"></div>
+				<ul class="pagination">
+					<li class="page-item page-prev">
+						<a href="../../guia/mybot/cuenta-discord.html">
+							<div class="page-item-subtitle"><i class="icon icon-back"></i> Atrás</div>
+							<div class="page-item-title h5">Cuenta discord</div>
+						</a>
+					</li>
+					<li class="page-item page-next">
+						<a href="../../guia/mybot/desarrollo-activacion-bot.html">
+							<div class="page-item-subtitle">Siguiente <i class="icon icon-forward"></i></div>
+							<div class="page-item-title h5">En marcha mi primer BOT</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- /body -->
+	<script src="../../assets/js/jquery-3.0.0.min.js"></script>
+	<script src="../../assets/js/main.js"></script>
+</body>
+</html>
